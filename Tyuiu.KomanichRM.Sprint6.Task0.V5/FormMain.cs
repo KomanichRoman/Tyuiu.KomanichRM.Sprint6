@@ -23,7 +23,7 @@ namespace Tyuiu.KomanichRM.Sprint6.Task0.V5
             DataService ds = new DataService();
             try
             {
-                textBoxResult.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxInput.Text)));
+                textBoxResult_KRM.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxInput_KRM.Text)));
             }
             catch
             {
@@ -46,7 +46,7 @@ namespace Tyuiu.KomanichRM.Sprint6.Task0.V5
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 0 выполнил студент группы АСОиУб-23-3 Команич Роман Маркович");
+            MessageBox.Show("Таск 1 Выполнил студент группы АСОиУб-23-3 Команич Роман Маркович", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void textBoxResult_TextChanged(object sender, EventArgs e)
