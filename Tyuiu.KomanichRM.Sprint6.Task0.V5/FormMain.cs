@@ -11,9 +11,9 @@ using Tyuiu.KomanichRM.Sprint6.Task0.V5.Lib;
 
 namespace Tyuiu.KomanichRM.Sprint6.Task0.V5
 {
-    public partial class FormMain : Form
+    public partial class FormMain_KRM : Form
     {
-        public FormMain()
+        public FormMain_KRM()
         {
             InitializeComponent();
         }

@@ -1,7 +1,7 @@
 ﻿
 namespace Tyuiu.KomanichRM.Sprint6.Task0.V5
 {
-    partial class FormMain
+    partial class FormMain_KRM
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Tyuiu.KomanichRM.Sprint6.Task0.V5
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain_KRM));
             this.groupBoxTask_KRM = new System.Windows.Forms.GroupBox();
             this.textBoxTask_KRM = new System.Windows.Forms.TextBox();
             this.pictureBoxFormula_KRM = new System.Windows.Forms.PictureBox();
@@ -163,7 +163,7 @@ namespace Tyuiu.KomanichRM.Sprint6.Task0.V5
             this.buttonDone_KRM.UseVisualStyleBackColor = true;
             this.buttonDone_KRM.Click += new System.EventHandler(this.buttonDone_Click);
             // 
-            // FormMain
+            // FormMain_KRM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -175,7 +175,7 @@ namespace Tyuiu.KomanichRM.Sprint6.Task0.V5
             this.Controls.Add(this.groupBoxTask_KRM);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MinimizeBox = false;
-            this.Name = "FormMain";
+            this.Name = "FormMain_KRM";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск 0 | Вариант 5 | Команич Р. М.";
             this.groupBoxTask_KRM.ResumeLayout(false);

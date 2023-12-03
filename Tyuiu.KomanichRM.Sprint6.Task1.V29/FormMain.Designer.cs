@@ -1,7 +1,7 @@
 ﻿
 namespace Tyuiu.KomanichRM.Sprint6.Task1.V29
 {
-    partial class FormMain
+    partial class FormMain_KRM
     {
         /// <summary>
         /// Required designer variable.
@@ -32,6 +32,7 @@ namespace Tyuiu.KomanichRM.Sprint6.Task1.V29
             this.groupBoxTask_KRM = new System.Windows.Forms.GroupBox();
             this.textBoxCondition_KRM = new System.Windows.Forms.TextBox();
             this.groupBoxResult_KRM = new System.Windows.Forms.GroupBox();
+            this.labelResult_KRM = new System.Windows.Forms.Label();
             this.textBoxResult_KRM = new System.Windows.Forms.TextBox();
             this.groupBoxInput_KRM = new System.Windows.Forms.GroupBox();
             this.labelStop_KRM = new System.Windows.Forms.Label();
@@ -40,7 +41,6 @@ namespace Tyuiu.KomanichRM.Sprint6.Task1.V29
             this.textBoxInputA_KRM = new System.Windows.Forms.TextBox();
             this.buttonHelp_KRM = new System.Windows.Forms.Button();
             this.buttonDone_KRM = new System.Windows.Forms.Button();
-            this.labelResult_KRM = new System.Windows.Forms.Label();
             this.groupBoxTask_KRM.SuspendLayout();
             this.groupBoxResult_KRM.SuspendLayout();
             this.groupBoxInput_KRM.SuspendLayout();
@@ -79,6 +79,15 @@ namespace Tyuiu.KomanichRM.Sprint6.Task1.V29
             this.groupBoxResult_KRM.TabIndex = 1;
             this.groupBoxResult_KRM.TabStop = false;
             this.groupBoxResult_KRM.Text = "Вывод данных";
+            // 
+            // labelResult_KRM
+            // 
+            this.labelResult_KRM.AutoSize = true;
+            this.labelResult_KRM.Location = new System.Drawing.Point(7, 35);
+            this.labelResult_KRM.Name = "labelResult_KRM";
+            this.labelResult_KRM.Size = new System.Drawing.Size(80, 17);
+            this.labelResult_KRM.TabIndex = 1;
+            this.labelResult_KRM.Text = "Результат:";
             // 
             // textBoxResult_KRM
             // 
@@ -159,16 +168,7 @@ namespace Tyuiu.KomanichRM.Sprint6.Task1.V29
             this.buttonDone_KRM.UseVisualStyleBackColor = false;
             this.buttonDone_KRM.Click += new System.EventHandler(this.buttonDone_Click);
             // 
-            // labelResult_KRM
-            // 
-            this.labelResult_KRM.AutoSize = true;
-            this.labelResult_KRM.Location = new System.Drawing.Point(7, 35);
-            this.labelResult_KRM.Name = "labelResult_KRM";
-            this.labelResult_KRM.Size = new System.Drawing.Size(80, 17);
-            this.labelResult_KRM.TabIndex = 1;
-            this.labelResult_KRM.Text = "Результат:";
-            // 
-            // FormMain
+            // FormMain_KRM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -178,7 +178,7 @@ namespace Tyuiu.KomanichRM.Sprint6.Task1.V29
             this.Controls.Add(this.groupBoxInput_KRM);
             this.Controls.Add(this.groupBoxResult_KRM);
             this.Controls.Add(this.groupBoxTask_KRM);
-            this.Name = "FormMain";
+            this.Name = "FormMain_KRM";
             this.Text = "Спринт 6 | Таск 1 | Вариант 29 | Команич Р. М.";
             this.groupBoxTask_KRM.ResumeLayout(false);
             this.groupBoxTask_KRM.PerformLayout();
