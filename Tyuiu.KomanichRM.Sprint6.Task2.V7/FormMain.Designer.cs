@@ -148,6 +148,7 @@ namespace Tyuiu.KomanichRM.Sprint6.Task2.V7
             this.chartFunction_KRM.Series.Add(series1);
             this.chartFunction_KRM.Size = new System.Drawing.Size(457, 419);
             this.chartFunction_KRM.TabIndex = 3;
+            this.chartFunction_KRM.Click += new System.EventHandler(this.chartFunction_KRM_Click);
             // 
             // dataGridViewFunction_KRM
             // 

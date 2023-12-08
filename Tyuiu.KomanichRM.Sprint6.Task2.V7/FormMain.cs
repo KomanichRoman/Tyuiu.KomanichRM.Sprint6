@@ -79,7 +79,12 @@ namespace Tyuiu.KomanichRM.Sprint6.Task2.V7
 
         private void buttonHelp_KRM_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 1 Выполнил студент группы АСОиУб-23-3 Команич Роман Маркович", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Таск 2 Выполнил студент группы АСОиУб-23-3 Команич Роман Маркович", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void chartFunction_KRM_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
