@@ -37,10 +37,10 @@ namespace Tyuiu.KomanichRM.Sprint6.Task4.V17
             this.groupBoxTask_KRM = new System.Windows.Forms.GroupBox();
             this.textBoxTask_KRM = new System.Windows.Forms.TextBox();
             this.groupBoxInput_KRM = new System.Windows.Forms.GroupBox();
-            this.labelStart_KRM = new System.Windows.Forms.Label();
-            this.labelStop_KRM = new System.Windows.Forms.Label();
-            this.textBoxStart_KRM = new System.Windows.Forms.TextBox();
             this.textBoxStop_KRM = new System.Windows.Forms.TextBox();
+            this.textBoxStart_KRM = new System.Windows.Forms.TextBox();
+            this.labelStop_KRM = new System.Windows.Forms.Label();
+            this.labelStart_KRM = new System.Windows.Forms.Label();
             this.ButtonDone_KRM = new System.Windows.Forms.Button();
             this.buttonSave_KRM = new System.Windows.Forms.Button();
             this.buttonHelp_KRM = new System.Windows.Forms.Button();
@@ -58,7 +58,7 @@ namespace Tyuiu.KomanichRM.Sprint6.Task4.V17
             this.groupBoxTask_KRM.Controls.Add(this.textBoxTask_KRM);
             this.groupBoxTask_KRM.Location = new System.Drawing.Point(13, 13);
             this.groupBoxTask_KRM.Name = "groupBoxTask_KRM";
-            this.groupBoxTask_KRM.Size = new System.Drawing.Size(515, 119);
+            this.groupBoxTask_KRM.Size = new System.Drawing.Size(515, 148);
             this.groupBoxTask_KRM.TabIndex = 0;
             this.groupBoxTask_KRM.TabStop = false;
             this.groupBoxTask_KRM.Text = "Условие";
@@ -70,7 +70,7 @@ namespace Tyuiu.KomanichRM.Sprint6.Task4.V17
             this.textBoxTask_KRM.Multiline = true;
             this.textBoxTask_KRM.Name = "textBoxTask_KRM";
             this.textBoxTask_KRM.ReadOnly = true;
-            this.textBoxTask_KRM.Size = new System.Drawing.Size(463, 91);
+            this.textBoxTask_KRM.Size = new System.Drawing.Size(463, 108);
             this.textBoxTask_KRM.TabIndex = 0;
             this.textBoxTask_KRM.Text = resources.GetString("textBoxTask_KRM.Text");
             // 
@@ -80,21 +80,26 @@ namespace Tyuiu.KomanichRM.Sprint6.Task4.V17
             this.groupBoxInput_KRM.Controls.Add(this.textBoxStart_KRM);
             this.groupBoxInput_KRM.Controls.Add(this.labelStop_KRM);
             this.groupBoxInput_KRM.Controls.Add(this.labelStart_KRM);
-            this.groupBoxInput_KRM.Location = new System.Drawing.Point(550, 18);
+            this.groupBoxInput_KRM.Location = new System.Drawing.Point(545, 43);
             this.groupBoxInput_KRM.Name = "groupBoxInput_KRM";
             this.groupBoxInput_KRM.Size = new System.Drawing.Size(304, 100);
             this.groupBoxInput_KRM.TabIndex = 2;
             this.groupBoxInput_KRM.TabStop = false;
             this.groupBoxInput_KRM.Text = "Ввод данных";
             // 
-            // labelStart_KRM
+            // textBoxStop_KRM
             // 
-            this.labelStart_KRM.AutoSize = true;
-            this.labelStart_KRM.Location = new System.Drawing.Point(6, 36);
-            this.labelStart_KRM.Name = "labelStart_KRM";
-            this.labelStart_KRM.Size = new System.Drawing.Size(87, 17);
-            this.labelStart_KRM.TabIndex = 0;
-            this.labelStart_KRM.Text = "Старт шага:";
+            this.textBoxStop_KRM.Location = new System.Drawing.Point(135, 56);
+            this.textBoxStop_KRM.Name = "textBoxStop_KRM";
+            this.textBoxStop_KRM.Size = new System.Drawing.Size(100, 22);
+            this.textBoxStop_KRM.TabIndex = 1;
+            // 
+            // textBoxStart_KRM
+            // 
+            this.textBoxStart_KRM.Location = new System.Drawing.Point(6, 56);
+            this.textBoxStart_KRM.Name = "textBoxStart_KRM";
+            this.textBoxStart_KRM.Size = new System.Drawing.Size(100, 22);
+            this.textBoxStart_KRM.TabIndex = 1;
             // 
             // labelStop_KRM
             // 
@@ -105,24 +110,19 @@ namespace Tyuiu.KomanichRM.Sprint6.Task4.V17
             this.labelStop_KRM.TabIndex = 0;
             this.labelStop_KRM.Text = "Конец шага:";
             // 
-            // textBoxStart_KRM
+            // labelStart_KRM
             // 
-            this.textBoxStart_KRM.Location = new System.Drawing.Point(6, 56);
-            this.textBoxStart_KRM.Name = "textBoxStart_KRM";
-            this.textBoxStart_KRM.Size = new System.Drawing.Size(100, 22);
-            this.textBoxStart_KRM.TabIndex = 1;
-            // 
-            // textBoxStop_KRM
-            // 
-            this.textBoxStop_KRM.Location = new System.Drawing.Point(135, 56);
-            this.textBoxStop_KRM.Name = "textBoxStop_KRM";
-            this.textBoxStop_KRM.Size = new System.Drawing.Size(100, 22);
-            this.textBoxStop_KRM.TabIndex = 1;
+            this.labelStart_KRM.AutoSize = true;
+            this.labelStart_KRM.Location = new System.Drawing.Point(6, 36);
+            this.labelStart_KRM.Name = "labelStart_KRM";
+            this.labelStart_KRM.Size = new System.Drawing.Size(87, 17);
+            this.labelStart_KRM.TabIndex = 0;
+            this.labelStart_KRM.Text = "Старт шага:";
             // 
             // ButtonDone_KRM
             // 
             this.ButtonDone_KRM.BackColor = System.Drawing.Color.Lime;
-            this.ButtonDone_KRM.Location = new System.Drawing.Point(882, 29);
+            this.ButtonDone_KRM.Location = new System.Drawing.Point(877, 60);
             this.ButtonDone_KRM.Name = "ButtonDone_KRM";
             this.ButtonDone_KRM.Size = new System.Drawing.Size(95, 83);
             this.ButtonDone_KRM.TabIndex = 3;
@@ -133,7 +133,7 @@ namespace Tyuiu.KomanichRM.Sprint6.Task4.V17
             // buttonSave_KRM
             // 
             this.buttonSave_KRM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.buttonSave_KRM.Location = new System.Drawing.Point(1001, 29);
+            this.buttonSave_KRM.Location = new System.Drawing.Point(1003, 60);
             this.buttonSave_KRM.Name = "buttonSave_KRM";
             this.buttonSave_KRM.Size = new System.Drawing.Size(95, 82);
             this.buttonSave_KRM.TabIndex = 3;
@@ -144,7 +144,7 @@ namespace Tyuiu.KomanichRM.Sprint6.Task4.V17
             // buttonHelp_KRM
             // 
             this.buttonHelp_KRM.BackColor = System.Drawing.Color.Red;
-            this.buttonHelp_KRM.Location = new System.Drawing.Point(1118, 29);
+            this.buttonHelp_KRM.Location = new System.Drawing.Point(1125, 60);
             this.buttonHelp_KRM.Name = "buttonHelp_KRM";
             this.buttonHelp_KRM.Size = new System.Drawing.Size(95, 82);
             this.buttonHelp_KRM.TabIndex = 3;
@@ -155,9 +155,9 @@ namespace Tyuiu.KomanichRM.Sprint6.Task4.V17
             // groupBoxOutput_KRM
             // 
             this.groupBoxOutput_KRM.Controls.Add(this.textBoxResult_KRM);
-            this.groupBoxOutput_KRM.Location = new System.Drawing.Point(13, 138);
+            this.groupBoxOutput_KRM.Location = new System.Drawing.Point(13, 167);
             this.groupBoxOutput_KRM.Name = "groupBoxOutput_KRM";
-            this.groupBoxOutput_KRM.Size = new System.Drawing.Size(324, 458);
+            this.groupBoxOutput_KRM.Size = new System.Drawing.Size(324, 429);
             this.groupBoxOutput_KRM.TabIndex = 4;
             this.groupBoxOutput_KRM.TabStop = false;
             this.groupBoxOutput_KRM.Text = "Вывод";
@@ -177,14 +177,14 @@ namespace Tyuiu.KomanichRM.Sprint6.Task4.V17
             this.chartFunction_KRM.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartFunction_KRM.Legends.Add(legend1);
-            this.chartFunction_KRM.Location = new System.Drawing.Point(377, 138);
+            this.chartFunction_KRM.Location = new System.Drawing.Point(377, 167);
             this.chartFunction_KRM.Name = "chartFunction_KRM";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chartFunction_KRM.Series.Add(series1);
-            this.chartFunction_KRM.Size = new System.Drawing.Size(864, 452);
+            this.chartFunction_KRM.Size = new System.Drawing.Size(864, 423);
             this.chartFunction_KRM.TabIndex = 5;
             this.chartFunction_KRM.Text = "chart1";
             title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
