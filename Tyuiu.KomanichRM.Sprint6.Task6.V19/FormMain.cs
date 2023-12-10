@@ -12,9 +12,9 @@ using System.IO;
 
 namespace Tyuiu.KomanichRM.Sprint6.Task6.V19
 {
-    public partial class FormMain : Form
+    public partial class FormMain_KRM : Form
     {
-        public FormMain()
+        public FormMain_KRM()
         {
             InitializeComponent();
         }
@@ -23,21 +23,21 @@ namespace Tyuiu.KomanichRM.Sprint6.Task6.V19
 
         private void buttonOpenFile_Click(object sender, EventArgs e)
         {
-            openFileDialogTask.ShowDialog();
-            openFilePath = openFileDialogTask.FileName;
-            textBoxInput.Text = File.ReadAllText(openFilePath);
-            groupBoxOutput.Text = groupBoxOutput.Text + " " + openFileDialogTask.FileName;
-            buttonDone.Enabled = true;
+            openFileDialogTask_KRM.ShowDialog();
+            openFilePath = openFileDialogTask_KRM.FileName;
+            textBoxInput_KRM.Text = File.ReadAllText(openFilePath);
+            groupBoxOutput_KRM.Text = groupBoxOutput_KRM.Text + " " + openFileDialogTask_KRM.FileName;
+            buttonDone_KRM.Enabled = true;
         }
 
         private void buttonDone_Click(object sender, EventArgs e)
         {
-            textBoxOutput.Text = ds.CollectTextFromFile(openFilePath);
+            textBoxOutput_KRM.Text = ds.CollectTextFromFile(openFilePath);
         }
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            FormAbout formAbout = new FormAbout();
+            FormAbout_KRM formAbout = new FormAbout_KRM();
             formAbout.ShowDialog();
         }
     }

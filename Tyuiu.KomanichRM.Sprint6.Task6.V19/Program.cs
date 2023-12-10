@@ -16,7 +16,7 @@ namespace Tyuiu.KomanichRM.Sprint6.Task6.V19
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMain());
+            Application.Run(new FormMain_KRM());
         }
     }
 }

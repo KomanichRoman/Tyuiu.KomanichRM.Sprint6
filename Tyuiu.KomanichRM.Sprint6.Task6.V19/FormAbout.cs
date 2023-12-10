@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Tyuiu.KomanichRM.Sprint6.Task6.V19
 {
-    public partial class FormAbout : Form
+    public partial class FormAbout_KRM : Form
     {
-        public FormAbout()
+        public FormAbout_KRM()
         {
             InitializeComponent();
         }
