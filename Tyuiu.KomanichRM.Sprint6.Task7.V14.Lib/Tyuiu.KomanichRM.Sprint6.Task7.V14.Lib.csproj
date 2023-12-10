@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3B395B51-B02D-4636-82C6-83EA2B537632}</ProjectGuid>
+    <ProjectGuid>{51DBEEEF-F989-4D7C-A863-CA157D011626}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tyuiu.KomanichRM.Sprint6.Task3.V20.Lib</RootNamespace>
-    <AssemblyName>Tyuiu.KomanichRM.Sprint6.Task3.V20.Lib</AssemblyName>
+    <RootNamespace>Tyuiu.KomanichRM.Sprint6.Task7.V14.Lib</RootNamespace>
+    <AssemblyName>Tyuiu.KomanichRM.Sprint6.Task7.V14.Lib</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -39,8 +39,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="tyuiu.cources.programming.interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="tyuiu.cources.programming.interfaces">
       <HintPath>..\tyuiu.cources.programming.interfaces.dll</HintPath>
     </Reference>
   </ItemGroup>

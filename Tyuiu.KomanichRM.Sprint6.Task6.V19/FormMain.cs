@@ -40,5 +40,10 @@ namespace Tyuiu.KomanichRM.Sprint6.Task6.V19
             FormAbout_KRM formAbout = new FormAbout_KRM();
             formAbout.ShowDialog();
         }
+
+        private void FormMain_KRM_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

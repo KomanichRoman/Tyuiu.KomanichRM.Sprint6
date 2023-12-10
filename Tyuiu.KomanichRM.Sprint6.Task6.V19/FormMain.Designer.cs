@@ -32,25 +32,25 @@ namespace Tyuiu.KomanichRM.Sprint6.Task6.V19
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain_KRM));
             this.panelTop_KRM = new System.Windows.Forms.Panel();
-            this.panelLeft_KRM = new System.Windows.Forms.Panel();
-            this.panelRight_KRM = new System.Windows.Forms.Panel();
-            this.splitter_KRM = new System.Windows.Forms.Splitter();
+            this.buttonHelp_KRM = new System.Windows.Forms.Button();
+            this.buttonDone_KRM = new System.Windows.Forms.Button();
+            this.buttonOpenFile_KRM = new System.Windows.Forms.Button();
             this.groupBoxTask_KRM = new System.Windows.Forms.GroupBox();
             this.textBoxTask_KRM = new System.Windows.Forms.TextBox();
-            this.buttonOpenFile_KRM = new System.Windows.Forms.Button();
-            this.buttonDone_KRM = new System.Windows.Forms.Button();
-            this.buttonHelp_KRM = new System.Windows.Forms.Button();
+            this.panelLeft_KRM = new System.Windows.Forms.Panel();
             this.groupBoxInput_KRM = new System.Windows.Forms.GroupBox();
-            this.groupBoxOutput_KRM = new System.Windows.Forms.GroupBox();
             this.textBoxInput_KRM = new System.Windows.Forms.TextBox();
+            this.panelRight_KRM = new System.Windows.Forms.Panel();
+            this.groupBoxOutput_KRM = new System.Windows.Forms.GroupBox();
             this.textBoxOutput_KRM = new System.Windows.Forms.TextBox();
+            this.splitter_KRM = new System.Windows.Forms.Splitter();
             this.openFileDialogTask_KRM = new System.Windows.Forms.OpenFileDialog();
             this.toolTip_KRM = new System.Windows.Forms.ToolTip(this.components);
             this.panelTop_KRM.SuspendLayout();
-            this.panelLeft_KRM.SuspendLayout();
-            this.panelRight_KRM.SuspendLayout();
             this.groupBoxTask_KRM.SuspendLayout();
+            this.panelLeft_KRM.SuspendLayout();
             this.groupBoxInput_KRM.SuspendLayout();
+            this.panelRight_KRM.SuspendLayout();
             this.groupBoxOutput_KRM.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,31 +66,41 @@ namespace Tyuiu.KomanichRM.Sprint6.Task6.V19
             this.panelTop_KRM.Size = new System.Drawing.Size(1258, 156);
             this.panelTop_KRM.TabIndex = 0;
             // 
-            // panelLeft_KRM
+            // buttonHelp_KRM
             // 
-            this.panelLeft_KRM.Controls.Add(this.groupBoxInput_KRM);
-            this.panelLeft_KRM.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelLeft_KRM.Location = new System.Drawing.Point(0, 156);
-            this.panelLeft_KRM.Name = "panelLeft_KRM";
-            this.panelLeft_KRM.Size = new System.Drawing.Size(629, 475);
-            this.panelLeft_KRM.TabIndex = 0;
+            this.buttonHelp_KRM.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonHelp_KRM.Image = ((System.Drawing.Image)(resources.GetObject("buttonHelp_KRM.Image")));
+            this.buttonHelp_KRM.Location = new System.Drawing.Point(1045, 30);
+            this.buttonHelp_KRM.Name = "buttonHelp_KRM";
+            this.buttonHelp_KRM.Size = new System.Drawing.Size(99, 90);
+            this.buttonHelp_KRM.TabIndex = 1;
+            this.buttonHelp_KRM.UseVisualStyleBackColor = false;
+            this.buttonHelp_KRM.Click += new System.EventHandler(this.buttonHelp_Click);
             // 
-            // panelRight_KRM
+            // buttonDone_KRM
             // 
-            this.panelRight_KRM.Controls.Add(this.groupBoxOutput_KRM);
-            this.panelRight_KRM.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelRight_KRM.Location = new System.Drawing.Point(635, 156);
-            this.panelRight_KRM.Name = "panelRight_KRM";
-            this.panelRight_KRM.Size = new System.Drawing.Size(623, 475);
-            this.panelRight_KRM.TabIndex = 0;
+            this.buttonDone_KRM.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.buttonDone_KRM.Image = ((System.Drawing.Image)(resources.GetObject("buttonDone_KRM.Image")));
+            this.buttonDone_KRM.Location = new System.Drawing.Point(874, 30);
+            this.buttonDone_KRM.Name = "buttonDone_KRM";
+            this.buttonDone_KRM.Size = new System.Drawing.Size(99, 90);
+            this.buttonDone_KRM.TabIndex = 1;
+            this.toolTip_KRM.SetToolTip(this.buttonDone_KRM, "Производит поиск в файле вхождений символов \"l\"\r\nи конкатенирует строки в которых" +
+        " находяться \r\nэти символы\r\n");
+            this.buttonDone_KRM.UseVisualStyleBackColor = false;
+            this.buttonDone_KRM.Click += new System.EventHandler(this.buttonDone_Click);
             // 
-            // splitter_KRM
+            // buttonOpenFile_KRM
             // 
-            this.splitter_KRM.Location = new System.Drawing.Point(629, 156);
-            this.splitter_KRM.Name = "splitter_KRM";
-            this.splitter_KRM.Size = new System.Drawing.Size(3, 475);
-            this.splitter_KRM.TabIndex = 1;
-            this.splitter_KRM.TabStop = false;
+            this.buttonOpenFile_KRM.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.buttonOpenFile_KRM.Image = ((System.Drawing.Image)(resources.GetObject("buttonOpenFile_KRM.Image")));
+            this.buttonOpenFile_KRM.Location = new System.Drawing.Point(701, 30);
+            this.buttonOpenFile_KRM.Name = "buttonOpenFile_KRM";
+            this.buttonOpenFile_KRM.Size = new System.Drawing.Size(99, 90);
+            this.buttonOpenFile_KRM.TabIndex = 1;
+            this.toolTip_KRM.SetToolTip(this.buttonOpenFile_KRM, "Открыть файл\r\nВыберите нужный файл для обработки\r\n");
+            this.buttonOpenFile_KRM.UseVisualStyleBackColor = false;
+            this.buttonOpenFile_KRM.Click += new System.EventHandler(this.buttonOpenFile_Click);
             // 
             // groupBoxTask_KRM
             // 
@@ -113,38 +123,14 @@ namespace Tyuiu.KomanichRM.Sprint6.Task6.V19
             this.textBoxTask_KRM.TabIndex = 0;
             this.textBoxTask_KRM.Text = resources.GetString("textBoxTask_KRM.Text");
             // 
-            // buttonOpenFile_KRM
+            // panelLeft_KRM
             // 
-            this.buttonOpenFile_KRM.Location = new System.Drawing.Point(701, 30);
-            this.buttonOpenFile_KRM.Name = "buttonOpenFile_KRM";
-            this.buttonOpenFile_KRM.Size = new System.Drawing.Size(99, 90);
-            this.buttonOpenFile_KRM.TabIndex = 1;
-            this.buttonOpenFile_KRM.Text = "Открыть файл";
-            this.toolTip_KRM.SetToolTip(this.buttonOpenFile_KRM, "Открыть файл\r\nВыберите нужный файл для обработки\r\n");
-            this.buttonOpenFile_KRM.UseVisualStyleBackColor = true;
-            this.buttonOpenFile_KRM.Click += new System.EventHandler(this.buttonOpenFile_Click);
-            // 
-            // buttonDone_KRM
-            // 
-            this.buttonDone_KRM.Location = new System.Drawing.Point(874, 30);
-            this.buttonDone_KRM.Name = "buttonDone_KRM";
-            this.buttonDone_KRM.Size = new System.Drawing.Size(99, 90);
-            this.buttonDone_KRM.TabIndex = 1;
-            this.buttonDone_KRM.Text = "Выполнить";
-            this.toolTip_KRM.SetToolTip(this.buttonDone_KRM, "Производит поиск в файле вхождений символов \"l\"\r\nи конкатенирует строки в которых" +
-        " находяться \r\nэти символы\r\n");
-            this.buttonDone_KRM.UseVisualStyleBackColor = true;
-            this.buttonDone_KRM.Click += new System.EventHandler(this.buttonDone_Click);
-            // 
-            // buttonHelp_KRM
-            // 
-            this.buttonHelp_KRM.Location = new System.Drawing.Point(1045, 30);
-            this.buttonHelp_KRM.Name = "buttonHelp_KRM";
-            this.buttonHelp_KRM.Size = new System.Drawing.Size(99, 90);
-            this.buttonHelp_KRM.TabIndex = 1;
-            this.buttonHelp_KRM.Text = "Справка";
-            this.buttonHelp_KRM.UseVisualStyleBackColor = true;
-            this.buttonHelp_KRM.Click += new System.EventHandler(this.buttonHelp_Click);
+            this.panelLeft_KRM.Controls.Add(this.groupBoxInput_KRM);
+            this.panelLeft_KRM.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeft_KRM.Location = new System.Drawing.Point(0, 156);
+            this.panelLeft_KRM.Name = "panelLeft_KRM";
+            this.panelLeft_KRM.Size = new System.Drawing.Size(629, 475);
+            this.panelLeft_KRM.TabIndex = 0;
             // 
             // groupBoxInput_KRM
             // 
@@ -156,6 +142,23 @@ namespace Tyuiu.KomanichRM.Sprint6.Task6.V19
             this.groupBoxInput_KRM.TabStop = false;
             this.groupBoxInput_KRM.Text = " Ввод:";
             // 
+            // textBoxInput_KRM
+            // 
+            this.textBoxInput_KRM.Location = new System.Drawing.Point(6, 31);
+            this.textBoxInput_KRM.Multiline = true;
+            this.textBoxInput_KRM.Name = "textBoxInput_KRM";
+            this.textBoxInput_KRM.Size = new System.Drawing.Size(597, 419);
+            this.textBoxInput_KRM.TabIndex = 0;
+            // 
+            // panelRight_KRM
+            // 
+            this.panelRight_KRM.Controls.Add(this.groupBoxOutput_KRM);
+            this.panelRight_KRM.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelRight_KRM.Location = new System.Drawing.Point(635, 156);
+            this.panelRight_KRM.Name = "panelRight_KRM";
+            this.panelRight_KRM.Size = new System.Drawing.Size(623, 475);
+            this.panelRight_KRM.TabIndex = 0;
+            // 
             // groupBoxOutput_KRM
             // 
             this.groupBoxOutput_KRM.Controls.Add(this.textBoxOutput_KRM);
@@ -166,14 +169,6 @@ namespace Tyuiu.KomanichRM.Sprint6.Task6.V19
             this.groupBoxOutput_KRM.TabStop = false;
             this.groupBoxOutput_KRM.Text = "Вывод:";
             // 
-            // textBoxInput_KRM
-            // 
-            this.textBoxInput_KRM.Location = new System.Drawing.Point(6, 31);
-            this.textBoxInput_KRM.Multiline = true;
-            this.textBoxInput_KRM.Name = "textBoxInput_KRM";
-            this.textBoxInput_KRM.Size = new System.Drawing.Size(597, 419);
-            this.textBoxInput_KRM.TabIndex = 0;
-            // 
             // textBoxOutput_KRM
             // 
             this.textBoxOutput_KRM.Location = new System.Drawing.Point(6, 31);
@@ -181,6 +176,14 @@ namespace Tyuiu.KomanichRM.Sprint6.Task6.V19
             this.textBoxOutput_KRM.Name = "textBoxOutput_KRM";
             this.textBoxOutput_KRM.Size = new System.Drawing.Size(597, 419);
             this.textBoxOutput_KRM.TabIndex = 0;
+            // 
+            // splitter_KRM
+            // 
+            this.splitter_KRM.Location = new System.Drawing.Point(629, 156);
+            this.splitter_KRM.Name = "splitter_KRM";
+            this.splitter_KRM.Size = new System.Drawing.Size(3, 475);
+            this.splitter_KRM.TabIndex = 1;
+            this.splitter_KRM.TabStop = false;
             // 
             // openFileDialogTask_KRM
             // 
@@ -203,13 +206,14 @@ namespace Tyuiu.KomanichRM.Sprint6.Task6.V19
             this.Name = "FormMain_KRM";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Такс 6 | Вариант 19 | Команич Р.М.";
+            this.Load += new System.EventHandler(this.FormMain_KRM_Load);
             this.panelTop_KRM.ResumeLayout(false);
-            this.panelLeft_KRM.ResumeLayout(false);
-            this.panelRight_KRM.ResumeLayout(false);
             this.groupBoxTask_KRM.ResumeLayout(false);
             this.groupBoxTask_KRM.PerformLayout();
+            this.panelLeft_KRM.ResumeLayout(false);
             this.groupBoxInput_KRM.ResumeLayout(false);
             this.groupBoxInput_KRM.PerformLayout();
+            this.panelRight_KRM.ResumeLayout(false);
             this.groupBoxOutput_KRM.ResumeLayout(false);
             this.groupBoxOutput_KRM.PerformLayout();
             this.ResumeLayout(false);
