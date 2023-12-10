@@ -33,22 +33,22 @@ namespace Tyuiu.KomanichRM.Sprint6.Task5.V11
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelTop = new System.Windows.Forms.Panel();
-            this.panelLeft = new System.Windows.Forms.Panel();
-            this.panelRight = new System.Windows.Forms.Panel();
-            this.splitter1 = new System.Windows.Forms.Splitter();
-            this.splitter2 = new System.Windows.Forms.Splitter();
+            this.buttonHelp = new System.Windows.Forms.Button();
+            this.buttonOpenFile = new System.Windows.Forms.Button();
+            this.buttonDone = new System.Windows.Forms.Button();
             this.groupBoxTask = new System.Windows.Forms.GroupBox();
             this.textBoxTask = new System.Windows.Forms.TextBox();
-            this.buttonDone = new System.Windows.Forms.Button();
-            this.buttonOpenFile = new System.Windows.Forms.Button();
-            this.buttonHelp = new System.Windows.Forms.Button();
+            this.splitter2 = new System.Windows.Forms.Splitter();
+            this.panelLeft = new System.Windows.Forms.Panel();
             this.dataGridViewResult = new System.Windows.Forms.DataGridView();
+            this.panelRight = new System.Windows.Forms.Panel();
             this.chartColumns = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.splitter1 = new System.Windows.Forms.Splitter();
             this.panelTop.SuspendLayout();
-            this.panelLeft.SuspendLayout();
-            this.panelRight.SuspendLayout();
             this.groupBoxTask.SuspendLayout();
+            this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult)).BeginInit();
+            this.panelRight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartColumns)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,39 +65,38 @@ namespace Tyuiu.KomanichRM.Sprint6.Task5.V11
             this.panelTop.Size = new System.Drawing.Size(1217, 123);
             this.panelTop.TabIndex = 0;
             // 
-            // panelLeft
+            // buttonHelp
             // 
-            this.panelLeft.Controls.Add(this.dataGridViewResult);
-            this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelLeft.Location = new System.Drawing.Point(0, 123);
-            this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(306, 534);
-            this.panelLeft.TabIndex = 1;
+            this.buttonHelp.BackColor = System.Drawing.Color.Red;
+            this.buttonHelp.Location = new System.Drawing.Point(1012, 26);
+            this.buttonHelp.Name = "buttonHelp";
+            this.buttonHelp.Size = new System.Drawing.Size(95, 85);
+            this.buttonHelp.TabIndex = 2;
+            this.buttonHelp.Text = "Справка";
+            this.buttonHelp.UseVisualStyleBackColor = false;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
             // 
-            // panelRight
+            // buttonOpenFile
             // 
-            this.panelRight.Controls.Add(this.chartColumns);
-            this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelRight.Location = new System.Drawing.Point(312, 123);
-            this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(905, 534);
-            this.panelRight.TabIndex = 2;
+            this.buttonOpenFile.BackColor = System.Drawing.Color.Cyan;
+            this.buttonOpenFile.Location = new System.Drawing.Point(876, 26);
+            this.buttonOpenFile.Name = "buttonOpenFile";
+            this.buttonOpenFile.Size = new System.Drawing.Size(95, 85);
+            this.buttonOpenFile.TabIndex = 2;
+            this.buttonOpenFile.Text = "Открыть файл";
+            this.buttonOpenFile.UseVisualStyleBackColor = false;
+            this.buttonOpenFile.Click += new System.EventHandler(this.buttonOpenFile_Click);
             // 
-            // splitter1
+            // buttonDone
             // 
-            this.splitter1.Location = new System.Drawing.Point(306, 123);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 534);
-            this.splitter1.TabIndex = 3;
-            this.splitter1.TabStop = false;
-            // 
-            // splitter2
-            // 
-            this.splitter2.Location = new System.Drawing.Point(0, 0);
-            this.splitter2.Name = "splitter2";
-            this.splitter2.Size = new System.Drawing.Size(3, 123);
-            this.splitter2.TabIndex = 0;
-            this.splitter2.TabStop = false;
+            this.buttonDone.BackColor = System.Drawing.Color.LimeGreen;
+            this.buttonDone.Location = new System.Drawing.Point(737, 26);
+            this.buttonDone.Name = "buttonDone";
+            this.buttonDone.Size = new System.Drawing.Size(95, 85);
+            this.buttonDone.TabIndex = 2;
+            this.buttonDone.Text = "Выполнить";
+            this.buttonDone.UseVisualStyleBackColor = false;
+            this.buttonDone.Click += new System.EventHandler(this.buttonDone_Click);
             // 
             // groupBoxTask
             // 
@@ -122,38 +121,22 @@ namespace Tyuiu.KomanichRM.Sprint6.Task5.V11
     "исок из чисел. Вывести все числа, кратные 5. \r\nПостроить диаграмму по этим значе" +
     "ниям.";
             // 
-            // buttonDone
+            // splitter2
             // 
-            this.buttonDone.BackColor = System.Drawing.Color.LimeGreen;
-            this.buttonDone.Location = new System.Drawing.Point(737, 26);
-            this.buttonDone.Name = "buttonDone";
-            this.buttonDone.Size = new System.Drawing.Size(95, 85);
-            this.buttonDone.TabIndex = 2;
-            this.buttonDone.Text = "Выполнить";
-            this.buttonDone.UseVisualStyleBackColor = false;
-            this.buttonDone.Click += new System.EventHandler(this.buttonDone_Click);
+            this.splitter2.Location = new System.Drawing.Point(0, 0);
+            this.splitter2.Name = "splitter2";
+            this.splitter2.Size = new System.Drawing.Size(3, 123);
+            this.splitter2.TabIndex = 0;
+            this.splitter2.TabStop = false;
             // 
-            // buttonOpenFile
+            // panelLeft
             // 
-            this.buttonOpenFile.BackColor = System.Drawing.Color.Cyan;
-            this.buttonOpenFile.Location = new System.Drawing.Point(876, 26);
-            this.buttonOpenFile.Name = "buttonOpenFile";
-            this.buttonOpenFile.Size = new System.Drawing.Size(95, 85);
-            this.buttonOpenFile.TabIndex = 2;
-            this.buttonOpenFile.Text = "Открыть файл";
-            this.buttonOpenFile.UseVisualStyleBackColor = false;
-            this.buttonOpenFile.Click += new System.EventHandler(this.buttonOpenFile_Click);
-            // 
-            // buttonHelp
-            // 
-            this.buttonHelp.BackColor = System.Drawing.Color.Red;
-            this.buttonHelp.Location = new System.Drawing.Point(1012, 26);
-            this.buttonHelp.Name = "buttonHelp";
-            this.buttonHelp.Size = new System.Drawing.Size(95, 85);
-            this.buttonHelp.TabIndex = 2;
-            this.buttonHelp.Text = "Справка";
-            this.buttonHelp.UseVisualStyleBackColor = false;
-            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
+            this.panelLeft.Controls.Add(this.dataGridViewResult);
+            this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeft.Location = new System.Drawing.Point(0, 123);
+            this.panelLeft.Name = "panelLeft";
+            this.panelLeft.Size = new System.Drawing.Size(306, 534);
+            this.panelLeft.TabIndex = 1;
             // 
             // dataGridViewResult
             // 
@@ -165,6 +148,15 @@ namespace Tyuiu.KomanichRM.Sprint6.Task5.V11
             this.dataGridViewResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dataGridViewResult.Size = new System.Drawing.Size(290, 505);
             this.dataGridViewResult.TabIndex = 0;
+            // 
+            // panelRight
+            // 
+            this.panelRight.Controls.Add(this.chartColumns);
+            this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelRight.Location = new System.Drawing.Point(312, 123);
+            this.panelRight.Name = "panelRight";
+            this.panelRight.Size = new System.Drawing.Size(905, 534);
+            this.panelRight.TabIndex = 2;
             // 
             // chartColumns
             // 
@@ -183,6 +175,14 @@ namespace Tyuiu.KomanichRM.Sprint6.Task5.V11
             this.chartColumns.TabIndex = 0;
             this.chartColumns.Text = "chart1";
             // 
+            // splitter1
+            // 
+            this.splitter1.Location = new System.Drawing.Point(306, 123);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(3, 534);
+            this.splitter1.TabIndex = 3;
+            this.splitter1.TabStop = false;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -195,12 +195,13 @@ namespace Tyuiu.KomanichRM.Sprint6.Task5.V11
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск 5 | Вариант 11 | Команич Р. М.";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.panelTop.ResumeLayout(false);
-            this.panelLeft.ResumeLayout(false);
-            this.panelRight.ResumeLayout(false);
             this.groupBoxTask.ResumeLayout(false);
             this.groupBoxTask.PerformLayout();
+            this.panelLeft.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult)).EndInit();
+            this.panelRight.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chartColumns)).EndInit();
             this.ResumeLayout(false);
 

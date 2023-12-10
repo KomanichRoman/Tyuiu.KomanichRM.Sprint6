@@ -54,5 +54,10 @@ namespace Tyuiu.KomanichRM.Sprint6.Task5.V11
         {
             MessageBox.Show("Таск 4 Выполнил студент группы АСОиУб-23-3 Команич Роман Маркович", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
